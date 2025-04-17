@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Blog</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <div class="container">
+        <a href="" class="navbar-brand">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobile"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="mobile" class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a href="blogs.html" class="nav-link active">Bloglar</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">İletişim</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              type="text"
+              class="form-control me-2"
+              placeholder="Aranacak Kelime"
+            />
+
+            <button type="button" class="btn btn-warning">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container my-4">
+        <div class="row">
+          <!-- Kategoriler -->
+          <div class="col-md-3 d-none d-md-block">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action"
+                >Kodlama Rehberleri</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Mobil Geliştirme</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Web Tasarım İpuçları</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Veri Bilimi & Kariyer</a
+              >
+            </div>
+          </div>
+
+          <!-- İçerikler -->
+          <div class="col-md-9">
+            <nav>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                <li class="breadcrumb-item active">Teknoloji Yazıları</li>
+              </ol>
+            </nav>
+
+            <div class="card mb-2 shadow">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="img/1.jpeg"
+                    alt="Kodlama"
+                    class="img-fluid rounded-start"
+                  />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Yeni Başlayanlar İçin Kodlama Rehberi
+                    </h5>
+                    <p class="card-text">
+                      Kodlama öğrenmek, teknolojinin dilini çözmektir. Bu
+                      rehberde en uygun diller, kaynaklar ve başlangıç
+                      seviyesinde nasıl ilerleyeceğinizi adım adım anlatıyoruz.
+                      HTML, CSS, Python gibi dillerle ilk adımı güvenle atın.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-2 shadow">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="img/2.jpeg"
+                    alt="Mobil Uygulama"
+                    class="img-fluid rounded-start"
+                  />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Mobil Uygulama Geliştirmeye Nereden Başlanır?
+                    </h5>
+                    <p class="card-text">
+                      Android mi iOS mu? Flutter mı React Native mi? Mobil
+                      uygulama geliştirmenin temel kavramlarını, platform
+                      farklarını ve yeni başlayanlara yönelik yol haritasını bu
+                      içerikte bulabilirsiniz.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-2 shadow">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="img/3.jpeg"
+                    alt="Web Tasarım"
+                    class="img-fluid rounded-start"
+                  />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Web Tasarımında Renk Uyumu ve Estetik
+                    </h5>
+                    <p class="card-text">
+                      Kullanıcı deneyimini etkileyen en önemli faktörlerden biri
+                      renk uyumudur. Renk teorisi, uyumlu paletler ve görsel
+                      estetiği artıracak ipuçlarını bu yazımızda detaylıca ele
+                      alıyoruz.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-2 shadow">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="img/4.jpeg"
+                    alt="Veri Bilimi"
+                    class="img-fluid rounded-start"
+                  />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Veri Bilimi ile Geleceğe Yatırım Yapın
+                    </h5>
+                    <p class="card-text">
+                      Veri bilimi alanında kariyer yapmak isteyenler için bu
+                      rehberde Python, SQL ve makine öğrenmesi gibi konuların
+                      yanı sıra, nasıl portföy oluşturacağınızı ve sektöre nasıl
+                      adım atacağınızı anlatıyoruz.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sayfalama -->
+            <nav class="my-5">
+              <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                  <a class="page-link">Önceki</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Sonraki</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-5 bg-dark text-white">
+      <div class="container text-center">
+        <span>Tüm Hakları Saklıdır & 2025</span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
